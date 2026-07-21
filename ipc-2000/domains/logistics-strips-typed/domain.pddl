@@ -3,15 +3,12 @@
 
 (define (domain logistics)
   (:requirements :strips :typing) 
-  (:types truck
-          airplane - vehicle
-          package
-          vehicle - physobj
-          airport
-          location - place
-          city
-          place 
-          physobj - object)
+  (:types 
+          city place physobj - object
+          airport location - place
+          package vehicle - physobj
+          truck airplane - vehicle
+  )
   
   (:predicates 	(in-city ?loc - place ?city - city)
 		(at ?obj - physobj ?loc - place)
