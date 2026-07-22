@@ -6,8 +6,8 @@
 (:types 
 	hoist surface place - object
 	container depot - place
-	storearea transitarea - area
 	area crate - surface
+	storearea transitarea - area
 	)
 
 (:predicates (clear ?s - storearea)
